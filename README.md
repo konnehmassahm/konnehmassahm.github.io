@@ -1,11 +1,12 @@
 # Project Title
-Skills UP
+Education
 
-A Website we buit to enable students gain access to step-by-step tutorial of Mathhematics, Englishand programming languages.
+An educational website designed or built to provide learning resources, for accessible collaboration tools for students, teachers, and parents. 
 
 # Installation
 
 Steps to install and run the project.
+Our website does not require any installation process but you just need to we browser where you could put in the URL of it.
 
 # Usage
 
