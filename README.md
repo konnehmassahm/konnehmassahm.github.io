@@ -7,7 +7,7 @@ An educational website designed or built to provide learning resources, for acce
 
 Steps to install and run the project.
 
-Our website does not require any installation process but you just need to open a web browser where you could put in the URL website link.
+Our website does not require any installation process but rather all you need to do is just open a web browser where you can put in the URL or link of the website.
 
 # Usage
 
