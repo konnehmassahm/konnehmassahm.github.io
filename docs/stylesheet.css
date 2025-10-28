@@ -1,0 +1,24 @@
+/* External stylesheet for my Profile Page*/
+
+img {
+    display: block;
+    margin: 10px auto;
+    border: 3px solid gray;
+    box-shadow: 10px;
+}
+
+/* External Styling of my link element*/
+a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
