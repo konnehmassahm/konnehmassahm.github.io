@@ -155,6 +155,11 @@ nav a.active {
     border: none;
 }
 
+/* Team Hover Transition */
+.team-member-hover:hover {
+    transition: width 2s, height 4s;
+}
+
 /* FOOTER */
 footer {
     background-color: #333;
