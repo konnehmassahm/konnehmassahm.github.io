@@ -1,0 +1,276 @@
+
+body { margin:0; font-family:Arial; background:#ffffff; min-height:100vh; }
+.header { background:#3e5bb7; padding:20px; display:flex; justify-content:space-between; align-items:center; color:white; flex-wrap:wrap; }
+.logo-area { display:flex; align-items:center; gap:10px; }
+.logo { width:70px; height:70px; border-radius:50%; }
+.nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; }
+.nav a { text-decoration:none; color:white; font-weight:bold; }
+/*.search-bar { display:flex; gap:5px; margin-top:10px; }
+.search-bar input { padding:5px; }
+.search-bar button { padding:6px 12px; border:none; border-radius:6px; }*/
+
+main { padding:40px; min-height:400px; background:white; }
+
+.footer { background:#303030; color:white; display:flex; flex-wrap:wrap; justify-content:space-around; padding:40px; text-align:left; }
+.col a { color:white; }
+
+.course-wrap { display:flex; justify-content:center; gap:25px; margin-top:20px; flex-wrap:wrap; }
+.card { width:300px; background:white; padding:20px; border-radius:10px; box-shadow:0 0 12px rgba(0,0,0,0.25); text-align:center; }
+.card img { width:100%; border-radius:10px; }
+.btn { display:inline-block; padding:10px 18px; background:#3e5bb7; color:white; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:10px; }
+
+.banner { width:100%; border-radius:12px; margin-bottom:20px; }
+
+/* ----------------- RESPONSIVE ----------------- */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .header { flex-direction:column; text-align:center; }
+    .search-bar { justify-content:center; }
+    .nav { justify-content:center; }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .logo { width:60px; height:60px; }
+    .nav { flex-direction:column; gap:8px; }
+    .search-bar { flex-direction:column; width:100%; }
+    .search-bar input { width:100%; }
+    .search-bar button { width:100%; }
+    .course-wrap { flex-direction:column; align-items:center; }
+    .card { width:90%; }
+    .footer { flex-direction:column; text-align:center; gap:20px; }
+}
+
+
+/* ------------------------------------------------- */
+/* BEAUTIFICATION UPGRADES – Smooth Modern UI */
+/* ------------------------------------------------- */
+
+* {
+    transition: 0.25s ease-in-out;
+}
+
+.header {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.nav a:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.search-bar input {
+    border-radius: 6px;
+    border: none;
+}
+
+.search-bar button {
+    background: #2d49a6;
+    color: white;
+    cursor: pointer;
+}
+.search-bar button:hover {
+    background: #223b8a;
+}
+
+.card {
+    transform: translateY(0);
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+    background: #2d49a6;
+    transform: scale(1.05);
+}
+
+.footer {
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.25);
+}
+
+/* Add subtle gradient to header + buttons */
+.header {
+    background: linear-gradient(90deg, #3e5bb7, #2d49a6);
+}
+
+.btn {
+    background: linear-gradient(90deg, #3e5bb7, #2d49a6);
+}
+
+/* Make banner smooth & rounded */
+.banner {
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* Improve main spacing */
+main {
+    padding: 60px 40px;
+}
+
+/* Improve footer spacing & link hover */
+.col a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Hero section on Home */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background: #f5f7ff;
+    padding: 40px 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    animation: heroFade 0.8s ease-out;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #1f2b5a;
+}
+
+.hero-text p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.hero-side ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-side li {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.hero-btn {
+    margin-top: 5px;
+}
+
+.home-intro {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* Active nav highlight per page */
+.page-home .nav a[href="index.html"],
+.page-about .nav a[href="about.html"],
+.page-courses .nav a[href="courses.html"],
+.page-gallery .nav a[href="gallery.html"],
+.page-contact .nav a[href="contact.html"],
+.page-faq .nav a[href="faq.html"] {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Simple keyframes */
+@keyframes heroFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course-img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.course-banner {
+    width: 90%;
+    max-width: 500px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.course-separator {
+    margin-top: 80px;
+}
+
+.course-section {
+    margin-top: 80px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #ccc;
+}
